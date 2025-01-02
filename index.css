@@ -139,7 +139,7 @@ main {
     border: none;
     border-radius: 10px;
     background-color: red;
-    width: 18%;
+    width: 110px;
     height: 40px;
     text-align: left;
     font-size: 1rem;
@@ -147,9 +147,70 @@ main {
     margin-top: 1rem;
     font-weight: 700;
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
+    align-self: flex-start;
     align-items: center;
+    flex-grow: 0;
 }
 
-  
-  
+.suggestion-title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    padding-right: 1rem;
+    margin-bottom: .3rem;
+}  
+
+.suggestion-title h2 {
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+
+.suggestion-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.suggestion-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 1rem;
+    width: 23%;
+    align-items: flex-start;
+    row-gap: 0.3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.suggestion-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.item-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: invert(30%);
+    color: white; /* Yazı rengini beyaz yapar */
+    padding: 0.5rem; /* İçerik kenar boşlukları */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 0.3rem;
+}
+
+.suggestion-details {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.7rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.3rem;
+}
