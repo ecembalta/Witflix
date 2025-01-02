@@ -4,7 +4,7 @@
 }
 
 */
-body {
+body{
     font-size: 1rem;
     font-family: "Inter";
 }
@@ -213,4 +213,54 @@ section {
     display: flex;
     flex-direction: column;
     row-gap: 2.3rem;
+}
+
+footer {
+    display: flex;
+    font-size: .8rem;
+    gap: 5%;
+    margin: 5rem 0;
+}
+
+.copyright {
+    width: 50%;
+}
+
+.copyright nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-bottom: 1rem;
+}
+
+.follow-us {
+    color: gray;
+    display: flex;
+    width: 15%;
+    flex-direction: column;
+}
+
+.follow-us div{
+    display: flex;
+    gap: .7rem;
+    margin-top: 1rem;
+}
+
+.follow-us img {
+    width: 2.7rem;
+}
+
+.apps {
+    color: gray;
+    width: 25%;
+}
+
+.apps div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.apps div img{
+    width: 7rem;
 }
