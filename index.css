@@ -85,6 +85,7 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform .2s;
 }
 
 .profilePhoto img {
@@ -151,7 +152,9 @@ main {
     align-self: flex-start;
     align-items: center;
     flex-grow: 0;
+    transition: transform .2s;
 }
+
 
 .suggestion-title {
     display: flex;
@@ -194,8 +197,8 @@ main {
     width: 100%;
     height: 100%;
     backdrop-filter: invert(30%);
-    color: white; /* Yazı rengini beyaz yapar */
-    padding: 0.5rem; /* İçerik kenar boşlukları */
+    color: white;
+    padding: 0.5rem;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -261,6 +264,14 @@ footer {
     margin-top: 1rem;
 }
 
-.apps div img{
+.apps img{
     width: 7rem;
+}
+
+.fa-bell:hover, .btn:hover, .profilePhoto img:hover, .apps div img:hover,  .follow-us img:hover{
+    cursor: pointer;
+}
+
+.btn:hover, .profilePhoto:hover {
+    transform: scale(1.1);
 }
