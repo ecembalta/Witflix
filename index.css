@@ -24,20 +24,22 @@ header {
     padding: 1rem;
 }
 
-nav {
+.logo {
+    height: 40px;
+    order: 1;
+}
+
+.category {
     display: flex;
     justify-content: space-between;
     gap: 20px;
     align-items: center;
+    order: 2;
 }
 
 nav a {
     text-decoration: none;
     color: gray;
-}
-
-.logo {
-    height: 40px;
 }
 
 .search {
@@ -46,6 +48,7 @@ nav a {
     margin-right: 30px;
     align-items: center;
     gap: 20px;
+    order: 3;
 }
 
 .search-box {
@@ -222,7 +225,7 @@ footer {
     display: flex;
     font-size: .8rem;
     gap: 5%;
-    margin: 5rem 0;
+    margin: rem 0;
 }
 
 .copyright {
@@ -233,7 +236,7 @@ footer {
     display: flex;
     justify-content: flex-start;
     gap: 50px;
-    margin-bottom: 1rem;
+    margin-bottom: .7rem;
 }
 
 .follow-us {
@@ -246,7 +249,7 @@ footer {
 .follow-us div{
     display: flex;
     gap: .7rem;
-    margin-top: 1rem;
+    margin-top: .3rem;
 }
 
 .follow-us img {
@@ -261,7 +264,7 @@ footer {
 .apps div {
     display: flex;
     justify-content: space-between;
-    margin-top: 1rem;
+    margin-top: .3rem;
 }
 
 .apps img{
@@ -274,4 +277,54 @@ footer {
 
 .btn:hover, .profilePhoto:hover {
     transform: scale(1.1);
+}
+
+@media (max-width: 700px) {
+
+    header {
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+    }
+
+    .logo {
+        order: 1; 
+        justify-content: flex-start;
+    }
+
+    .search {
+        order: 2; 
+        justify-content: flex-end;
+        margin-right: 0;
+    }
+
+    .category {
+        flex: 80%; 
+        order: 3; 
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .suggestion-content {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .suggestion-item {
+        margin-bottom: 1rem;
+        width: 45%;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        row-gap: 1rem;
+        padding: 1rem;
+    }
+
+    .copyright {
+        width: 100%;
+    }
+
+    .follow-us {
+        margin-right: 3rem;
+    }
 }
